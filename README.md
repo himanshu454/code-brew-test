@@ -10,6 +10,10 @@
 
 -   Install npm, if not installed (Require NPM version >= 6.0.0)
 
+```
+    $ npm install
+```
+
 
     Create .env file which should have these env variable [API_KEY].
 
