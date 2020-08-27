@@ -17,12 +17,6 @@
 
     Create .env file which should have these env variable [API_KEY].
 
--   To run the application with customized ENV variable
-
-```
-    $ PORT=3000 npm start
-```
-
 -   To run the application with default settings
 
 ```
