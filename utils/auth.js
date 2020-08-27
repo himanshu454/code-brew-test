@@ -9,9 +9,9 @@ const jwt = require('jsonwebtoken');
 let auth = {};
 
 auth.verifyApiKey = async (req, res, next) => {
-	if (req.query && req.query.apiKey === process.env.API_KEY) {
+	if (req.query && req.query.apiKey && req.query.apiKey === (process.env.API_KEY || 'fuel_booking!@#$%^&*&^&**^$')) {
 		next();
-	} else if (req.body && req.body.apiKey === process.env.API_KEY) {
+	} else if (req.body && req.body.apiKey && req.body.apiKey === (process.env.API_KEY || 'fuel_booking!@#$%^&*&^&**^$')) {
 		next();
 	} else {
 		res.status(401).json({
